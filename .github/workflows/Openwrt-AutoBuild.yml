@@ -126,7 +126,7 @@ jobs:
         cd openwrt
         echo -e "$(nproc) thread compile"
         make -j$(nproc) || make -j1 V=s
-        find ./bin -name *initramfs*  -exec rm -f {} \;
+        find ./bin  ! -name '*ac2100*' -name *initramfs*  -exec rm -f {} \;
         echo "::set-output name=status::success"
         
     - name:  Pack packages_dir
