@@ -4,7 +4,6 @@ echo "Test custom.sh"
 
 source ../version
 
-rm -rf package/feeds/routing/olsrd/patches/012-gpsd.patch
 rm -rf package/lean/default-settings/files/zzz-default-settings
 wget https://raw.githubusercontent.com/hyird/Action-Openwrt/main/user/lienol-x64/default-settings -O package/lean/default-settings/files/zzz-default-settings
 
