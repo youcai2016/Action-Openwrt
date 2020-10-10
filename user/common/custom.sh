@@ -3,10 +3,7 @@
 echo "Apply custom.sh"
 
 sed -i 's/DEPENDS.*/& \+luci-i18n-mwan3-zh-cn/g'  package/lean/luci-app-syncdial/Makefile
-rm -rf package/feeds/routing/olsrd/patches/012-gpsd.patch
-rm -rf package/lean/default-settings/files/zzz-default-settings
-wget https://raw.githubusercontent.com/coolsnowwolf/lede/99222f49fd9f63eef575ac34f251280e6e97f3b3/package/lean/default-settings/files/zzz-default-settings -O package/lean/default-settings/files/zzz-default-settings
-
+sed -i 's/DEPENDS.*/& \+kmod-usb-core +kmod-usb-ohci +kmod-usb-uhci +kmod-usb-storage +kmod-usb-storage-extras +kmod-usb2 +kmod-scsi-core/g'  package/lean/automount/Makefile
 
 git clone https://github.com/CCnut/feed-netkeeper.git -b LUCI-LUA-UCITRACK                                 package/nk
 git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git                             package/luci-theme-infinityfreedom
