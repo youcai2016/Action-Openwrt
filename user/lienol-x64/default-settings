@@ -16,7 +16,7 @@ ln -sf /sbin/ip /usr/bin/ip
 
 sed -i 's/downloads.openwrt.org/openwrt.download/g' /etc/opkg/distfeeds.conf
 sed -i 's/http/https/g' /etc/opkg/distfeeds.conf
-sed -i 's/19.07-SNAPSHOT/L20.0.0/g' /etc/opkg/distfeeds.conf
+sed -i 's/releases\/19.07-SNAPSHOT/L20.0.0/g' /etc/opkg/distfeeds.conf
 sed -i "s/# //g" /etc/opkg/distfeeds.conf
 
 #DNS重定向
