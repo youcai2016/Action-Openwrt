@@ -12,6 +12,7 @@ sed -i  "s/L20\(.[0-9].[0-9]\{1,2\}\)/L20.$version/g" package/default-settings/f
 sed -i 's/DEPENDS.*/& \+luci-i18n-samba-zh-cn/g'  package/lean/autosamba/Makefile
 rm -rf package/feeds/diy1/naiveproxy
 git clone https://github.com/fw876/helloworld.git package/helloworld
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2 package/redsocks2
 
 
 
