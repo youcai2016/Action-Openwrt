@@ -500,6 +500,7 @@ CONFIG_PACKAGE_iputils-traceroute6=m
 CONFIG_PACKAGE_open-vm-tools-fuse=m
 CONFIG_PACKAGE_snmpd=m
 CONFIG_PACKAGE_subconverter=m
+CONFIG_PACKAGE_libpam=m
 
 # 必备
 CONFIG_PACKAGE_openssh-sftp-server=y
