@@ -92,6 +92,8 @@ CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_zyxel_wre6606=y
 CONFIG_TARGET_DEVICE_PACKAGES_ipq40xx_generic_DEVICE_zyxel_wre6606=""
 
 # 额外包
+
+CONFIG_PACKAGE_autocore-arm=y
 CONFIG_PACKAGE_automount=m
 CONFIG_PACKAGE_autosamba=m
 CONFIG_PACKAGE_ipv6helper=y
@@ -99,10 +101,6 @@ CONFIG_PACKAGE_jose=m
 CONFIG_PACKAGE_libjose=m
 CONFIG_PACKAGE_tang=m
 CONFIG_PACKAGE_wireguard-tools=m
-
-
-
-
 
 # Firmware
 
