@@ -27,4 +27,4 @@ git clone https://github.com/brvphoenix/wrtbwmon.git                            
 git clone https://github.com/destan19/OpenAppFilter.git                                                   package/oaf
 svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome                           package/adg
 svn co https://github.com/Lienol/openwrt-luci/trunk/applications/luci-app-smartdns                        package/luci-app-smartdns
-svn co https://github.com/Lienol/openwrt-packages/trunk/net/smartdns                                      package/smartdns
+git clone https://github.com/pymumu/luci-app-smartdns.git -b lede                                         package/smartdns 
