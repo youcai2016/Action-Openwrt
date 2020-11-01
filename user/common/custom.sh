@@ -15,6 +15,8 @@ git clone https://github.com/garypang13/luci-app-eqos								                   
 git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git                                         package/luci-theme-opentomcat
 git clone https://github.com/Leo-Jo-My/luci-theme-opentomato.git                                         package/luci-theme-opentomato
 git clone https://github.com/jerrykuku/luci-app-argon-config.git                                         package/luci-app-argon-config
+git clone https://github.com/jerrykuku/lua-maxminddb.git                                                 package/lua-maxminddb
+git clone https://github.com/jerrykuku/luci-app-vssr.git                                                 package/luci-app-vssr
 
 
       
