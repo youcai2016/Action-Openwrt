@@ -25,7 +25,39 @@ git clone https://github.com/jerrykuku/luci-app-argon-config.git                
 git clone https://github.com/jerrykuku/lua-maxminddb.git                                                 package/lua-maxminddb
 git clone https://github.com/jerrykuku/luci-app-vssr.git                                                 package/luci-app-vssr
 
+cat > package/lean/wget/patches/002-edit-ua.patch <<eof
+--- a/src/http.c	2019-04-02 02:11:25.000000000 +0800
++++ b/src/http.c	2020-11-20 01:36:24.652240500 +0800
+@@ -1772,7 +1772,7 @@
+ #define SET_USER_AGENT(req) do {                                         \
+   if (!opt.useragent)                                                    \
+     request_set_header (req, "User-Agent",                               \
+-                        aprintf ("Wget/%s (VMS %s %s)",                  \
++                        aprintf ("hyird",                  \
+                         version_string, vms_arch(), vms_vers()),         \
+                         rel_value);                                      \
+   else if (*opt.useragent)                                               \
+@@ -1782,7 +1782,7 @@
+ #define SET_USER_AGENT(req) do {                                         \
+   if (!opt.useragent)                                                    \
+     request_set_header (req, "User-Agent",                               \
+-                        aprintf ("Wget/%s (%s)",                         \
++                        aprintf ("hyird",                         \
+                         version_string, OS_TYPE),                        \
+                         rel_value);                                      \
+   else if (*opt.useragent)                                               \
+eof
 
-      
-
-
+cat > package/libs/uclient/patches/001-edit-ua.patch <<eof
+--- a/src/uclient-fetch.c	2020-11-20 02:04:15.113415500 +0800
++++ b/src/uclient-fetch.c	2020-11-19 22:39:56.000000000 +0800
+@@ -41,7 +41,7 @@
+ #define LIB_EXT "so"
+ #endif
+ 
+-static const char *user_agent = "uclient-fetch";
++static const char *user_agent = "hyird";
+ static const char *post_data;
+ static const char *post_file;
+ static struct ustream_ssl_ctx *ssl_ctx;
+eof
