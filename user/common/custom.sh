@@ -25,25 +25,4 @@ git clone https://github.com/jerrykuku/luci-app-argon-config.git                
 git clone https://github.com/jerrykuku/lua-maxminddb.git                                                 package/lua-maxminddb
 git clone https://github.com/jerrykuku/luci-app-vssr.git                                                 package/luci-app-vssr
 
-cat > package/lean/wget/patches/002-edit-ua.patch <<EOF
---- a/src/http.c	2019-04-02 02:11:25.000000000 +0800
-+++ b/src/http.c	2020-11-20 01:36:24.652240500 +0800
-@@ -1772,7 +1772,7 @@
- #define SET_USER_AGENT(req) do {                                         \
-   if (!opt.useragent)                                                    \
-     request_set_header (req, "User-Agent",                               \
--                        aprintf ("Wget/%s (VMS %s %s)",                  \
-+                        aprintf ("hyird",                  \
-                         version_string, vms_arch(), vms_vers()),         \
-                         rel_value);                                      \
-   else if (*opt.useragent)                                               \
-@@ -1782,7 +1782,7 @@
- #define SET_USER_AGENT(req) do {                                         \
-   if (!opt.useragent)                                                    \
-     request_set_header (req, "User-Agent",                               \
--                        aprintf ("Wget/%s (%s)",                         \
-+                        aprintf ("hyird",                         \
-                         version_string, OS_TYPE),                        \
-                         rel_value);                                      \
-   else if (*opt.useragent)                                               \
-EOF
+cp user/common/002-edit-ua.patchcat package/lean/wget/patches/
