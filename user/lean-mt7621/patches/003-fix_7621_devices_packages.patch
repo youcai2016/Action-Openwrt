@@ -27,7 +27,16 @@
  endef
  TARGET_DEVICES += gehua_ghl-r-001
  
-@@ -602,7 +602,7 @@
+@@ -508,7 +508,7 @@
+   JCG_MAXSIZE := 16064k
+   DEVICE_VENDOR := JCG
+   DEVICE_MODEL := Y2
+-  DEVICE_PACKAGES := kmod-mt7615d kmod-usb3 luci-app-mtwifi
++  DEVICE_PACKAGES := kmod-mt7615d-dbdc mt_wifi-mt7615-dbdc luci-app-mtwifi
+ endef
+ TARGET_DEVICES += jcg_y2
+ 
+@@ -614,7 +614,7 @@
    IMAGE_SIZE := 16064k
    DEVICE_VENDOR := Motorola
    DEVICE_MODEL := MR2600
@@ -36,7 +45,7 @@
  endef
  TARGET_DEVICES += motorola_mr2600
  
-@@ -730,7 +730,7 @@
+@@ -742,7 +742,7 @@
    SERCOMM_HWVER := A001
    SERCOMM_SWVER := 0x0052
    IMAGE_SIZE := 40960k
@@ -45,7 +54,7 @@
  endef
  TARGET_DEVICES += netgear_r6850
  
-@@ -805,7 +805,7 @@
+@@ -817,7 +817,7 @@
    DEVICE_VENDOR := Phicomm
    DEVICE_MODEL := K2P
    SUPPORTED_DEVICES += k2p
@@ -54,7 +63,7 @@
  endef
  TARGET_DEVICES += phicomm_k2p
  
-@@ -987,7 +987,7 @@
+@@ -999,7 +999,7 @@
    SUPPORTED_DEVICES += R3G
    SUPPORTED_DEVICES += mir3g
    DEVICE_PACKAGES := kmod-mt7603e kmod-mt76x2e kmod-usb3 \
@@ -63,7 +72,7 @@
  endef
  TARGET_DEVICES += xiaomi_mir3g
  
-@@ -1037,7 +1037,7 @@
+@@ -1049,7 +1049,7 @@
    DEVICE_MODEL := Mi Router 4
    SUPPORTED_DEVICES += R4
    SUPPORTED_DEVICES += mir4
@@ -72,7 +81,7 @@
  endef
  TARGET_DEVICES += xiaomi_mir4
  
-@@ -1054,7 +1054,7 @@
+@@ -1066,7 +1066,7 @@
    IMAGE/sysupgrade.bin := sysupgrade-tar | append-metadata
    IMAGE/factory.bin := append-kernel | pad-to $$(KERNEL_SIZE) | append-ubi | check-size
    DEVICE_VENDOR := Xiaomi
