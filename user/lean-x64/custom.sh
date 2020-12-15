@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Test custom.sh"
+echo "Apply custom.sh"
 
 source ../version
 
@@ -23,11 +23,7 @@ sed -i "45i echo 'src/gz openwrt_ipk https://openwrt.download/ExtraPackages/x86_
 
 rm -rf feeds/packages/net/smartdns
 rm -rf package/lean/luci-theme-argon
-rm -rf package/lean/luci-app-wrtbwmon
-wget https://github.com/brvphoenix/luci-app-wrtbwmon/archive/release-1.6.3.tar.gz
-tar zxvf release-1.6.3.tar.gz  -C package/                             
-git clone https://github.com/brvphoenix/wrtbwmon.git                                                      package/wrtbwmon
-git clone https://github.com/destan19/OpenAppFilter.git                                                   package/oaf
+
 svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome                           package/adg
 git clone https://github.com/pymumu/luci-app-smartdns.git -b lede                                         package/luci-app-smartdns
 svn co https://github.com/Lienol/openwrt-packages/trunk/net/smartdns                                      package/smartdns
