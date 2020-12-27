@@ -9,6 +9,13 @@ CONFIG_TARGET_MULTI_PROFILE=y
 CONFIG_TARGET_PER_DEVICE_ROOTFS=y
 CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r2s=y
 CONFIG_TARGET_DEVICE_PACKAGES_rockchip_armv8_DEVICE_friendlyarm_nanopi-r2s=""
+
+CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4s-1gb=y
+CONFIG_TARGET_DEVICE_PACKAGES_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4s-1gb=""
+
+CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4s-4gb=y
+CONFIG_TARGET_DEVICE_PACKAGES_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4s-4gb=""
+
 CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_pine64_rockpro64=y
 CONFIG_TARGET_DEVICE_PACKAGES_rockchip_armv8_DEVICE_pine64_rockpro64=""
 
@@ -17,7 +24,7 @@ CONFIG_TARGET_IMAGES_GZIP=y
 
 #设置分区大小
 CONFIG_TARGET_KERNEL_PARTSIZE=16
-CONFIG_TARGET_ROOTFS_PARTSIZE=496
+CONFIG_TARGET_ROOTFS_PARTSIZE=1008
 
 # 额外包
 
