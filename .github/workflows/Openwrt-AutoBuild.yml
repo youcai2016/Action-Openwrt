@@ -35,6 +35,12 @@ jobs:
       run: |
          date=$(date +%Y-%m-%d)
          echo "DATE=$date" >> $GITHUB_ENV
+         
+    - name: Delete workflow runs
+      uses: GitRML/delete-workflow-runs@main
+      with:
+        retain_days: 1
+        keep_minimum_runs: 3
                  
     - name: Initialization environment
       env:
