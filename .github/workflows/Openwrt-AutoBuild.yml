@@ -37,6 +37,7 @@ jobs:
          echo "DATE=$date" >> $GITHUB_ENV
          
     - name: Delete workflow runs
+      if: ${{matrix.target}} == lean-x64
       uses: GitRML/delete-workflow-runs@main
       with:
         retain_days: 1
