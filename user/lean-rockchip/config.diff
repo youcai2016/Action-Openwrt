@@ -358,6 +358,7 @@ CONFIG_PACKAGE_luci-app-wol=m
 CONFIG_PACKAGE_luci-app-wrtbwmon=m
 CONFIG_PACKAGE_luci-app-xlnetacc=m
 CONFIG_PACKAGE_luci-app-zerotier=m
+CONFIG_PACKAGE_luci-app-uugamebooster=m
 
 # 主题
 CONFIG_PACKAGE_luci-theme-darkmatter=y
