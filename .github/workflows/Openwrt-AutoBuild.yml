@@ -25,7 +25,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [lean-x64,lean-ipq40xx,lean-rockchip] #lean-x64,lean-ipq40xx,lean-mt7621,lean-rockchip,lienol-x64
+        target: [lean-x64,lean-ipq40xx,lean-mt7621,lean-rockchip] #lean-x64,lean-ipq40xx,lean-mt7621,lean-rockchip,lienol-x64
     
     steps:
     - name: Checkout
@@ -35,13 +35,6 @@ jobs:
       run: |
          date=$(date +%Y-%m-%d)
          echo "DATE=$date" >> $GITHUB_ENV
-         
-    - name: Delete workflow runs
-      if: ${{matrix.target}} == lean-x64
-      uses: GitRML/delete-workflow-runs@main
-      with:
-        retain_days: 1
-        keep_minimum_runs: 3
                  
     - name: Initialization environment
       env:
