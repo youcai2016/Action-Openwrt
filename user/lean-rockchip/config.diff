@@ -474,6 +474,10 @@ CONFIG_PACKAGE_snort3=m
 CONFIG_PACKAGE_block-mount=m
 
 ## ssrp && passwall
+CONFIG_PACKAGE_shadowsocks-libev-ss-local=m
+CONFIG_PACKAGE_shadowsocks-libev-ss-redir=m
+CONFIG_PACKAGE_simple-obfs=m
+CONFIG_PACKAGE_shadowsocksr-libev-server=m
 CONFIG_PACKAGE_redsocks2=m
 CONFIG_PACKAGE_chinadns-ng=m
 CONFIG_PACKAGE_trojan=m

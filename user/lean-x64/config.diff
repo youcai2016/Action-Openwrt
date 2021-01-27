@@ -307,6 +307,7 @@ CONFIG_PACKAGE_luci-app-squid=m
 CONFIG_PACKAGE_luci-app-ssr-mudb-server=m
 CONFIG_PACKAGE_luci-app-ssr-plus=m
 
+# CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks is not set
 # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray_plugin is not set
 # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Xray is not set
 # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan is not set
@@ -471,6 +472,10 @@ CONFIG_PACKAGE_snort=m
 CONFIG_PACKAGE_block-mount=m
 
 ## ssrp && passwall
+CONFIG_PACKAGE_shadowsocks-libev-ss-local=m
+CONFIG_PACKAGE_shadowsocks-libev-ss-redir=m
+CONFIG_PACKAGE_simple-obfs=m
+CONFIG_PACKAGE_shadowsocksr-libev-server=m
 CONFIG_PACKAGE_redsocks2=m
 CONFIG_PACKAGE_chinadns-ng=m
 CONFIG_PACKAGE_trojan=m
