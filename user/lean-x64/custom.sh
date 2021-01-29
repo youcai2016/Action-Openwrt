@@ -25,5 +25,7 @@ rm -rf feeds/packages/net/smartdns
 rm -rf package/lean/luci-theme-argon
 
 svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome                           package/adg
+git clone https://github.com/yfdoor/OpenWrt-AdGuardHome.git                                               package/AdGuardHome
+sed -i 's/DEPENDS.*/& \+AdGuardHome/g'  package/adg/Makefile
 git clone https://github.com/pymumu/luci-app-smartdns.git -b lede                                         package/luci-app-smartdns
 svn co https://github.com/Lienol/openwrt-packages/trunk/net/smartdns                                      package/smartdns
