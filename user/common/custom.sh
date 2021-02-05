@@ -8,7 +8,7 @@ rm -rf feeds/packages/net/smartdns
 rm -rf package/lean/luci-theme-argon
 
 
-svn co https://github.com/openwrt/packages/trunk/libs/libcap                                             packages/libs/libcap
+svn co https://github.com/openwrt/packages/trunk/libs/libcap                                             feeds/packages/libs/libcap
 svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome                          package/adg
 svn co https://github.com/Lienol/openwrt-packages/trunk/net/smartdns                                     package/smartdns
 
