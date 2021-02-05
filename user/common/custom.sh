@@ -4,7 +4,7 @@ echo "Apply custom.sh"
 
 rm -rf feeds/packages/libs/libcap
 
-svn co https://github.com/openwrt/packages/trunk/libs/libcap feeds/packages/libs/libcap
+svn co https://github.com/openwrt/packages/trunk/libs/libcap                                             packages/libs/libcap
 git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git                             package/luci-theme-infinityfreedom
 git clone https://github.com/yangsongli/luci-theme-atmaterial.git                                        package/luci-theme-atmaterial
 git clone https://github.com/jerrykuku/luci-theme-argon.git -b 18.06                                     package/luci-theme-argon-jerrykuku
