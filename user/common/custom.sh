@@ -27,7 +27,7 @@ git clone https://github.com/jerrykuku/lua-maxminddb.git                        
 git clone https://github.com/jerrykuku/luci-app-vssr.git                                                 package/luci-app-vssr
 git clone https://github.com/hyird/luci-theme-darkmatter.git		                                         package/luci-theme-darkmatter
 
-sed -i 's/DEPENDS.*/& \+AdGuardHome/g'  package/adg/Makefile
+sed -i 's/DEPENDS.*/& \+adguardhome/g'  package/adg/Makefile
 sed -i 's/DEPENDS.*/& \+kmod-tun +libcap-bin/g'  package/luci-app-openclash/luci-app-openclash/Makefile
 sed -i 's/DEPENDS.*/& \+luci-i18n-mwan3-zh-cn/g'  package/lean/luci-app-syncdial/Makefile
 sed -i 's/DEPENDS.*/& \+kmod-usb-core +kmod-usb-ohci +kmod-usb-uhci +kmod-usb-storage +kmod-usb-storage-extras +kmod-usb2 +kmod-scsi-core/g'  package/lean/automount/Makefile
