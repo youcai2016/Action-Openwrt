@@ -573,6 +573,7 @@ CONFIG_PACKAGE_iputils-tracepath6=m
 CONFIG_PACKAGE_snmpd=m
 CONFIG_PACKAGE_subconverter=m
 CONFIG_PACKAGE_cfdisk=m
+CONFIG_PACKAGE_usb-modeswith=m
 
 # 必备
 CONFIG_PACKAGE_openssh-sftp-server=y
